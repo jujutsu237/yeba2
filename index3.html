@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>    
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avertissement - Portefeuille Vide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #304138;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .warning {
+            background-color: #ffcccc;
+            border: 1px solid #ff0000;
+            padding: 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: gold;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    .yeba{
+        color: gold;
+    }
+    h5{
+            color: white;
+            font-size: x-large;
+        }
+    h7{
+        color: white;
+        font-size: larger;
+    }
+    .but{
+        background-color: #0c36b3;
+    }
+    .utilisateur{
+    background-color: #ffffff;
+    width: 70%;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    text-align: center;
+    background-color: #007bff;
+   }
+    loader {
+    border: 16px solid #f3f3f3; /* Couleur de fond */
+    border-top: 16px solid #3498db; /* Couleur de l'animation */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.register{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    background-color: blue;
+    height: 200px;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background: #007bff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    font-size: 24px;
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    background-color: blue;
+    height: 200px;
+    border-radius: 10px; /* Coins arrondis */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition pour l'effet */
+    font-size: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Ajuste les valeurs pour personnaliser l'ombre */
+    color: white;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.balance:hover {
+    transform: scale(1.1); /* Effet de grossissement */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.stats {
+  width: 300px;
+  height: 250px;
+  background-color: hsl(0, 5%, 92%);
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 0 auto;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition pour l'effet */
+}
+.stats:hover {
+    transform: scale(1.1); /* Effet de grossissement */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+
+.total-gains {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgb(229, 245, 245);
+    border-radius: 10px; /* Coins arrondis */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition pour l'effet */
+    font-size: 16px;
+    box-shadow: 5px 5px 10px rgba(27, 23, 255, 0.2); /* Ajuste les valeurs pour personnaliser l'ombre */
+    text-align: center;
+}
+p1{
+    color: red;
+}
+p2{
+    color: #27ed48;
+}
+nav {
+    background-color: #2d4dd7;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+
+
+nav ul {
+    background-color: #0056b3;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: fixed; /* Fixe la barre en bas de la page */
+    bottom: 0; /* Positionne la barre en bas */
+    left: 0; /* Aligne la barre à gauche */
+    width: 100%; /* Prend toute la largeur de la page */
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: background-image 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4545d1;
+}
+.container1 {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: center;
+}
+</style>
+    
+<script>
+   
+document.querySelector('.recharge-button').addEventListener('click', function() {
+    alert('Recharge functionality to be implemented.');
+});
+
+document.querySelector('.retrait-button').addEventListener('click', function() {
+    alert('Retrait functionality to be implemented.');
+});
+</script>
+</head>
+<body>
+
+    <div class="warning">
+        <h1>Avertissement</h1>
+        <p>Votre portefeuille est vide.</p>
+        <p>Veuillez le recharger pour continuer.</p>
+    </div>
+    <a href="index5.html" class="button">Recharger</a>
+    <main >
+        <div class="container1">
+            <div class="header">
+                <h1>Portefeuille</h1>
+                <div class="menu">
+                    <span class="icon">$</span>
+                </div>
+          </div>
+          <div class="balance">
+              <div class="recharge">
+                  <h2>Portefeuille Recharge</h2>
+                  <p1>500.00 CFA</p1>
+              </div>
+              <div class="revenus">
+                  <h2>Portefeuille 
+                      revenus</h2>
+                  <p1>23236.00 CFA</p1>
+              </div>
+          </div>
+          <div class="buttons">
+              <button class="recharge-button"><a href="formulaire.html">Recharge</a></button>
+              <button class="retrait-button">Retrait</button>
+          </div>
+          <div class="info">
+              <p2>ID: 655259260<p2>
+              <span class="icon">&#128064;</span>
+              <p class="cacher"></p>
+          </div>
+          <div class="stats">
+              <div class="actifs">
+                  <span class="icon">&#128204;</span>
+                  <h2>Total des actifs</h2>
+                  <p>000.00 CFA</p>
+              </div>
+              <div class="gains">
+                  <span class="icon">&#128197;</span>
+                  <h2>Gains du jour</h2>
+                  <p>000.00 CFA</p>
+              </div>
+          </div>
+          <pre><br><br><br></pre>
+          <div class="total-gains">
+              <h2><pre>Total des gains    <FONT color=blue><p3>000.00CFA</p3></FONT></pre></h2>
+              
+              <span class="icon">&#10145;</span>
+          </div>
+          </div>
+</html>

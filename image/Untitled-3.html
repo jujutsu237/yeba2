@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de Page Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images2.alphacoders.com/135/1353029.png'); /* Remplacez par le chemin de votre image de fond */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+            color: white;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5); /* Fond transparent pour l'en-tête */
+        }
+        .header img {
+            height: 50px; /* Ajustez la taille de l'image de l'en-tête */
+            margin-right: auto;
+        }
+        .header button {
+            font-size: 12px; /* Petit caractère pour le bouton */
+            padding: 5px 10px;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .explanation {
+            margin: 50px 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fond blanc transparent pour la zone d'explication */
+            border-radius: 10px;
+            color: black; /* Texte noir pour meilleure lisibilité */
+        }
+        .explanation button {
+            font-size: 14px;
+            padding: 8px 15px;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="header-image.jpg" alt="Logo"> <!-- Remplacez par le chemin de votre image d'en-tête -->
+        <button>Registre</button>
+    </div>
+
+    <div class="explanation">
+        <button>Registre</button>
+
+        <h2>Qu'est-ce que le Bitcoin ?</h2>
+        <p>
+            Le Bitcoin est une monnaie numérique décentralisée, sans banque centrale ni administrateur unique, qui peut être envoyée d'utilisateur à utilisateur sur le réseau Bitcoin peer-to-peer sans besoin d'intermédiaire.
+        </p>
+
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4"> <!-- Remplacez par le chemin de votre vidéo -->
+            Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+
+        <p>
+            Créé en 2009 par une personne ou un groupe de personnes utilisant le pseudonyme Satoshi Nakamoto, le Bitcoin a été la première crypto-monnaie décentralisée.
+        </p>
+    </div>
+
+</body>
+</html>

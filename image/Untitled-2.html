@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de Page Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://edukiya.com/wp-content/uploads/elementor/thumbs/salesman-fiche-metier-technicien-formation-afrique-senegal-cote-divoire-mali-benin-togo-congo-cameroun-guinee-tchad-niger-burkina-rwanda-scaled-pker6stxals7wjqf0jlg2v0e4e23tn2oirv40pjfn4.jpg'); /* Remplacez par le chemin de votre image de fond */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* S'assure que la page prend toute la hauteur de la fenêtre */
+            text-align: center; /* Centrer le texte */
+        }
+        .button-container, .video-container, .explanation {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .explanation {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fond blanc transparent pour la zone d'explication */
+            border-radius: 10px;
+            color: black; /* Texte noir pour meilleure lisibilité */
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <button>Registre</button>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="video.mp4" type="video/mp4"> <!-- Remplacez par le chemin de votre vidéo -->
+            Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+    </div>
+
+    <div class="explanation">
+        <h2>Qu'est-ce que le Bitcoin ?</h2>
+        <p>
+            Le Bitcoin est une monnaie numérique décentralisée, sans banque centrale ni administrateur unique, qui peut être envoyée d'utilisateur à utilisateur sur le réseau Bitcoin peer-to-peer sans besoin d'intermédiaire.
+        </p>
+        <p>
+            Créé en 2009 par une personne ou un groupe de personnes utilisant le pseudonyme Satoshi Nakamoto, le Bitcoin a été la première crypto-monnaie décentralisée.
+        </p>
+    </div>
+
+</body>
+</html>
